@@ -170,7 +170,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  height: 118px;
+  /* height: 118px; */
   transition: height 200ms ease-in-out;
 }
 
@@ -392,7 +392,7 @@ header .cta {
 }
 
 .teacher h3 {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 900;
   color: #272044;
   line-height: 48px;
@@ -621,4 +621,24 @@ header .cta {
 
 footer {
   padding: 25px
+}
+
+@media (max-width:600px){
+  body{padding-top:140px}
+  header ul{
+    margin: 20px -15px 0;
+    background: #f6f2fe;
+    transition: all 0.5s;
+  }
+  body.headroom--not-top.headroom--unpinned header ul{box-shadow: 2px 2px 2px #9a9a9a42;}
+  header ul li{
+    width: 18%;
+    line-height: normal;
+}
+  header ul li a{
+    padding: 0;
+    font-size: 13px;
+    display: inline-block;
+}
+.section--primary{margin-top: 0;}
 }
